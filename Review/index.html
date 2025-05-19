@@ -1,0 +1,50 @@
+<!-- 첫 게시판을 접속할때 목록이 뜨는 코드 -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록</title>
+  <link rel="stylesheet" href="">
+  <style>
+    .write_button {
+      text-align: right;
+    }
+    .search_form {
+      margin-top: 2rem;
+    }
+    .search_form .search_form__submit {
+      width: 5rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>후기 게시판</h1>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">번호</th>
+          <th scope="col">제목</th>
+          <th scope="col">작성자</th>
+          <th scope="col">작성일</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <div class="write_button">
+      <a href="new.html">글쓰기</a>
+    </div>
+    <div>
+      <!-- class 설정들을 미리 좀 예시? 느낌으로 해뒀습니다. 수정하실때 원하는대로 class 수정을 해주셔도될거같습니다. -->
+      <form class="search_form grid">
+        <input type="search" id="search" name="search" placeholder="Search" class="search_form__input">
+        <input type="submit" value="검색" class="search_form__submit">
+      </form>
+    </div>
+  </main>
+</body>
+</html>
